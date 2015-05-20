@@ -17,14 +17,17 @@
         "styles/editor-style.scss"
       ]
     },
-    "jquery.js": {
-      "bower": ["jquery"]
-    },
     "modernizr.js": {
       "bower": ["modernizr"]
+    },
+    "velocity.js": {
+      "bower": ["velocity"]
+    },
+    "neat-grid.js": {
+      "bower": ["neat-grid"]
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://local.wordpress.dev"
   }
 }
