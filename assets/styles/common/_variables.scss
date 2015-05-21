@@ -5,6 +5,10 @@ $line-height-computed: 1.5em;
 
 $screen-sm-min: 400px;
 
+$S:     768px;
+$M:     1024px;
+$L:     1600px; 
+
 $thumbnail-caption-padding: 1em;
 
 $color-1: #5f8ee4; // Cornflower Blue - Action color
@@ -15,8 +19,11 @@ $color-5: #ffffff; // white
 
 // additional colors
 
-$success: #6fce72; // green
+$info: #BDE5F8;
+$success: #DFF2BF; // green
 $alert: $color-3;  // red
+$error: #FFBABA;
+$warning: #FEEFB3;
 
 // fonts
 

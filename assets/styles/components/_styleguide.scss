@@ -1,4 +1,4 @@
-.cd-box {
+.qf-box {
 	/* this is the container of various design elements - i.e. the 2 logo of the branding section */
 	border: 1px solid $color-4;
 	border-radius: 3px;
@@ -13,7 +13,7 @@
 	border-radius: .25em;
 	font: {
 		size: 1.4rem;
-		family: $secondary-font;
+		family: $Secondary-font;
 	}
 	color: $color-5;
 	padding: .6em 2.2em;
@@ -29,10 +29,10 @@
 	}
 
 	&.btn-success {
-		background: $success;
+		background: $Success;
 
 		.no-touch &:hover {
-			background: lighten($success, 5%);
+			background: lighten($Success, 5%);
 		}
 	}
 
@@ -52,6 +52,178 @@
 		.no-touch &:hover {
 			color: $color-5;
 			background: $color-1;
+		}
+	}
+}
+
+.qf-icons li {
+	/* icons size */
+	width: 32px;
+	height: 32px;
+}
+
+.qf-branding {
+	@include row;
+
+	.qf-box {
+		margin-bottom: 1em;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+	ul:last-of-type {
+		padding-top: .6em;
+
+		li {
+			display: inline-block;
+			margin-right: 1em;
+		}
+
+		li:nth-of-type(1) img {
+			width: 90px;
+			height: 90px;
+			border-radius: 1em;
+		}
+
+		li:nth-of-type(2) img {
+			width: 60px;
+			height: 60px;
+			border-radius: .6em;
+		}
+
+		li:nth-of-type(3) img {
+			width: 32px;
+			height: 32px;
+			border-radius: .4em;
+		}
+
+		li:nth-of-type(4) img {
+			width: 16px;
+			height: 16px;
+			border-radius: .2em;
+		}
+	}
+
+	@include media($S) {
+		.qf-box {
+			@include span-columns(6);
+			margin: 0 2% 2em 0;
+		}
+
+		ul:last-of-type {
+			clear: left;
+
+			li {
+				margin-right: 3em;
+			}
+		}
+	}
+}
+
+.qf-colors {
+	ul {@include row;}
+
+	li {
+		text-align: center;
+		@include span-columns(6 of 12);
+		@include omega(2n);
+		margin-bottom: 1em;
+
+		@include media($S) {
+				@include span-columns(3 of 12);
+				@include omega(4n);
+		}
+	}
+
+
+	.qf-color-swatch {
+		position: relative;
+		width: 100%;
+		padding: 50% 0;
+
+		&::before, &::after {
+			/* lighter and darker color shades of the same swatch */
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: 50%;
+			height: 20%;
+		}
+
+		&::before {
+			left: 0;
+		}
+
+		&::after {
+			right: 0;
+		}
+	}
+
+	b {
+		display: block;
+		padding: .6em 0;
+	}
+
+	li:nth-of-type(1) .qf-color-swatch {
+		background: $color-1;
+
+		&::before {
+			background: lighten($color-1, 5%);
+		}
+
+		&::after {
+			background: darken($color-1, 5%);
+		}
+	}
+
+	li:nth-of-type(2) .qf-color-swatch {
+		background: $color-2;
+
+		&::before {
+			background: lighten($color-2, 5%);
+		}
+
+		&::after {
+			background: darken($color-2, 5%);
+		}
+	}
+
+	li:nth-of-type(3) .qf-color-swatch {
+		background: $color-3;
+
+		&::before {
+			background: lighten($color-3, 5%);
+		}
+
+		&::after {
+			background: darken($color-3, 5%);
+		}
+	}
+
+	li:nth-of-type(4) .qf-color-swatch {
+		background: $color-4;
+
+		&::before {
+			background: lighten($color-4, 5%);
+		}
+
+		&::after {
+			background: darken($color-4, 5%);
+		}
+	}
+
+	li:nth-of-type(5) .qf-color-swatch {
+		background: $color-5;
+
+		&::before {
+			background: lighten($color-5, 5%);
+		}
+
+		&::after {
+			background: darken($color-5, 5%);
 		}
 	}
 }
