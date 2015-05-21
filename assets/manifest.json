@@ -16,15 +16,6 @@
       "files": [
         "styles/editor-style.scss"
       ]
-    },
-    "modernizr.js": {
-      "bower": ["modernizr"]
-    },
-    "velocity.js": {
-      "bower": ["velocity"]
-    },
-    "neat-grid.js": {
-      "bower": ["neat-grid"]
     }
   },
   "config": {
