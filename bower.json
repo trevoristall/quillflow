@@ -7,15 +7,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "modernizr": "2.8.2",
     "velocity": "~1.2.2",
-    "svg-loaders": "~1.0.2",
-    "neat-grid": "~1.1.1",
-    "sanitize-css": "~1.1.0"
-  },
-  "overrides": {
-    "modernizr": {
-      "main": "./modernizr.js"
-    }
+    "sanitize-css": "~1.1.0",
+    "neat-grid": "~1.1.1"
   }
 }
